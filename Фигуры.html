@@ -36,7 +36,6 @@
   .triangle-topleft {
     width: 0;
     height: 0;
-    \\border-top: 60px solid red; 
     border-right: 60px solid transparent;
 	display: inline-block;	
 	
@@ -67,12 +66,16 @@
 .triangle-bottomright {
     width: 0;
     height: 0;
-    \\border-bottom: 60px solid #EA6B66; 
     border-left: 60px solid transparent;
 	display: inline-block;
-	margin-left: -64px;
 	
-}
+	}
+
+.mrg {
+	margin-left: -64px;
+	}
+	
+
 .trg-tb-green {
 	border-bottom: 60px solid rgb(151, 208, 119); 
 	}
@@ -93,6 +96,7 @@
 	border-bottom: 60px solid #EA6B66; 
 	}
 
+	
 
    
   </style>
@@ -111,14 +115,28 @@
   Две смены:
   <hr>
   <div class="triangle-topleft trg-tl-green"></div>
-  <div class="triangle-bottomright trg-tb-red"></div>
+  <div class="triangle-bottomright trg-tb-red mrg"></div>
+  <hr>
+  Все варианты (без класса " mrg"):
   <hr>
   <div class="triangle-topleft trg-tl-green"></div>
   <div class="triangle-topleft trg-tl-yellow"></div>
   <div class="triangle-topleft trg-tl-orange"></div>
   <div class="triangle-topleft trg-tl-blue"></div>
   <div class="triangle-topleft trg-tl-red"></div>
-  
- 
-
+  <hr>
+  <div class="triangle-bottomright trg-tb-green"></div>
+  <div class="triangle-bottomright trg-tb-yellow"></div>
+  <div class="triangle-bottomright trg-tb-orange"></div>
+  <div class="triangle-bottomright trg-tb-blue"></div>
+  <div class="triangle-bottomright trg-tb-red"></div>
+  <hr>
+  <code>Нужно обязательно прописать класс "mrg" для нижнеого треугольника, иначе он сдвинется под верхний!</code>
+  <hr>
+  <code>Пример:</code>
+  <hr>
+  <code>class="triangle-bottomright trg-tb-red mrg"</code>
+  <hr>
+    <code>Все варианты примеров нижнего даны без этого класса!</code>
+	<hr>
 </body></html>
