@@ -33,7 +33,7 @@
 }
 
   
-  .triangle-topleft {
+.triangle-topleft {
     width: 0;
     height: 0;
     border-right: 60px solid transparent;
@@ -96,7 +96,41 @@
 	border-bottom: 60px solid #EA6B66; 
 	}
 
-	
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid green;
+	display: inline-block;
+}	
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid blue;
+	display: inline-block;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid orange;
+    border-bottom: 15px solid transparent;
+	display: inline-block;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid red;
+    border-bottom: 15px solid transparent;
+	display: inline-block;
+}
 
    
   </style>
@@ -117,7 +151,7 @@
   <div class="triangle-topleft trg-tl-green"></div>
   <div class="triangle-bottomright trg-tb-red mrg"></div>
   <hr>
-  Все варианты (без класса " mrg"):
+  Все варианты (без класса для нижнего ряда треугольника " mrg"):
   <hr>
   <div class="triangle-topleft trg-tl-green"></div>
   <div class="triangle-topleft trg-tl-yellow"></div>
@@ -131,12 +165,23 @@
   <div class="triangle-bottomright trg-tb-blue"></div>
   <div class="triangle-bottomright trg-tb-red"></div>
   <hr>
-  <code>Нужно обязательно прописать класс "mrg" для нижнеого треугольника, иначе он сдвинется под верхний!</code>
+  <code>Нужно обязательно прописать класс "mrg" для нижнеого треугольника, иначе он не сдвинется под верхний и будет зазор!</code>
   <hr>
   <code>Пример:</code>
   <hr>
   <code>class="triangle-bottomright trg-tb-red mrg"</code>
   <hr>
-    <code>Все варианты примеров нижнего даны без этого класса!</code>
+    <code>Все варианты примеров нижнего треугольника даны без этого класса!</code>
 	<hr>
+	Выходной день:
+	<hr>
+	<div class="triangle-up"></div>
+	<div class="triangle-down"></div>
+	<div class="triangle-right"></div>
+	<div class="triangle-left"></div>
+	<hr>
+	
+	
+	
+	
 </body></html>
