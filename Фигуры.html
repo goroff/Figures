@@ -33,24 +33,65 @@
 }
 
   
-  .triangle-topleft-green {
+  .triangle-topleft {
     width: 0;
     height: 0;
-    border-top: 60px solid rgb(151, 208, 119); 
+    \\border-top: 60px solid red; 
     border-right: 60px solid transparent;
 	display: inline-block;	
 	
 }
 
-.triangle-bottomright-red {
+.trg-tl-green {
+	border-top: 60px solid rgb(151, 208, 119); 
+	}
+	
+.trg-tl-yellow {
+	border-top: 60px solid rgb(255, 255, 0); 
+	}
+	
+.trg-tl-orange {
+	border-top: 60px solid rgb(255, 181, 112);
+	}
+	
+.trg-tl-blue {
+	border-top: 60px solid #7EA6E0;
+	}
+	
+.trg-tl-red {
+	border-top: 60px solid #EA6B66; 
+	}
+
+	
+	
+.triangle-bottomright {
     width: 0;
     height: 0;
-    border-bottom: 60px solid #EA6B66; 
+    \\border-bottom: 60px solid #EA6B66; 
     border-left: 60px solid transparent;
 	display: inline-block;
 	margin-left: -64px;
 	
 }
+.trg-tb-green {
+	border-bottom: 60px solid rgb(151, 208, 119); 
+	}
+	
+.trg-tb-yellow {
+	border-bottom: 60px solid rgb(255, 255, 0); 
+	}
+	
+.trg-tb-orange {
+	border-bottom: 60px solid rgb(255, 181, 112);
+	}
+	
+.trg-tb-blue {
+	border-bottom: 60px solid #7EA6E0;
+	}
+	
+.trg-tb-red {
+	border-bottom: 60px solid #EA6B66; 
+	}
 
 
    
@@ -58,8 +99,8 @@
  </head>
  <body>
   <hr>
-  1-а смена:
-   <hr>
+  Одна смена:
+  <hr>
 
   <div class="square green" onclick="alert(&#39;В этот день не было нарушений!&#39;)"></div>
   <div class="square yellow" onclick="alert(&#39;Надо бы перейти в указанную дату!&#39;)"></div>
@@ -67,10 +108,16 @@
   <div class="square blue"></div>
   <div class="square red"></div>
   <hr>
-  
-  <div class="triangle-topleft-green"></div>
-  <div class="triangle-bottomright-red"></div>
+  Две смены:
   <hr>
+  <div class="triangle-topleft trg-tl-green"></div>
+  <div class="triangle-bottomright trg-tb-red"></div>
+  <hr>
+  <div class="triangle-topleft trg-tl-green"></div>
+  <div class="triangle-topleft trg-tl-yellow"></div>
+  <div class="triangle-topleft trg-tl-orange"></div>
+  <div class="triangle-topleft trg-tl-blue"></div>
+  <div class="triangle-topleft trg-tl-red"></div>
   
  
 
